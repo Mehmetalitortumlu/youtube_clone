@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
+import { useCallback, useState } from 'react';
 import './App.css';
+import Header from './Components/Header';
+import Menu from './Components/Menu';
+import Videos from './Components/Main/Videos';
 
 function App() {
+  const [menu,setMenu]=useState(true)
+  
+  const onChangeMenu= useCallback(() => {
+    setMenu(menu === true ? false : true)
+  },[menu])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header menu={menu} onChangeMenu={onChangeMenu}/>
+      <div className="container-fluid ">
+        <div className="row">
+        <Menu menu={menu} setMenu={setMenu}/>
+        <Videos/>
+        </div>
+      </div>
+    </>
   );
 }
 
