@@ -1,3 +1,10 @@
+# YOUTUBE CLONE 
+# https://app.netlify.com/sites/myoutubeclone/settings/general
+
+![img](https://github.com/Mehmetalitortumlu/youtube_clone/blob/master/public/img/img1.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
