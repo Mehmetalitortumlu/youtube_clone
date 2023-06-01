@@ -1,5 +1,5 @@
 # YOUTUBE CLONE 
-# https://app.netlify.com/sites/myoutubeclone/settings/general
+# [https://app.netlify.com/sites/myoutubeclone/settings/general](https://myoutubeclone.netlify.app/)
 
 ![img](https://github.com/Mehmetalitortumlu/youtube_clone/blob/master/public/img/img1.png)
 
